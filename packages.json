@@ -1,0 +1,68 @@
+{
+    "packages": {
+        "fyldocs/plugin-example": {
+            "dev-main": {
+                "name": "fyldocs/plugin-example",
+                "version": "dev-main",
+                "type": "fyldocs-plugin",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:fyldocs/plugin-example.git",
+                    "reference": "main"
+                },
+                "require": {
+                    "php": "^8.2",
+                    "illuminate/support": "^11.0"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Fyldocs\\Example\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Fyldocs\\Example\\ExamplePluginServiceProvider"
+                        ]
+                    },
+                    "fyldocs": {
+                        "plugin-id": "example",
+                        "frontend-path": "frontend"
+                    }
+                }
+            }
+        },
+        "fyldocs/plugin-rebrand": {
+            "dev-main": {
+                "name": "fyldocs/plugin-rebrand",
+                "version": "dev-main",
+                "type": "fyldocs-plugin",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:fyldocs/plugin-rebrand.git",
+                    "reference": "main"
+                },
+                "require": {
+                    "php": "^8.2",
+                    "illuminate/support": "^11.0"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Fyldocs\\Rebrand\\": "src/"
+                    }
+                },
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Fyldocs\\Rebrand\\RebrandPluginServiceProvider"
+                        ]
+                    },
+                    "fyldocs": {
+                        "plugin-id": "rebrand",
+                        "frontend-path": "frontend"
+                    }
+                }
+            }
+        }
+    }
+}
