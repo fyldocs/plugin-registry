@@ -1,185 +1,188 @@
 {
-    "packages": {
-        "fyldocs/plugin-example": {
-            "dev-main": {
-                "name": "fyldocs/plugin-example",
-                "version": "dev-main",
-                "type": "fyldocs-plugin",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:fyldocs/plugin-example.git",
-                    "reference": "main"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/fyldocs/plugin-example/zipball/main"
-                },
-                "require": {
-                    "php": "^8.2",
-                    "illuminate/support": "^11.0"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Fyldocs\\Example\\": "src/"
-                    }
-                },
-                "extra": {
-                    "laravel": {
-                        "providers": [
-                            "Fyldocs\\Example\\ExamplePluginServiceProvider"
-                        ]
-                    },
-                    "fyldocs": {
-                        "plugin-id": "example",
-                        "frontend-path": "frontend"
-                    }
-                }
-            }
+  "packages": {
+    "fyldocs/plugin-example": {
+      "dev-main": {
+        "name": "fyldocs/plugin-example",
+        "version": "dev-main",
+        "type": "fyldocs-plugin",
+        "source": {
+          "type": "git",
+          "url": "git@github.com:fyldocs/plugin-example.git",
+          "reference": "main"
         },
-        "fyldocs/plugin-rebrand": {
-            "dev-main": {
-                "name": "fyldocs/plugin-rebrand",
-                "version": "dev-main",
-                "type": "fyldocs-plugin",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:fyldocs/plugin-rebrand.git",
-                    "reference": "main"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/fyldocs/plugin-rebrand/zipball/main"
-                },
-                "require": {
-                    "php": "^8.2",
-                    "illuminate/support": "^11.0"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Fyldocs\\Rebrand\\": "src/"
-                    }
-                },
-                "extra": {
-                    "laravel": {
-                        "providers": [
-                            "Fyldocs\\Rebrand\\RebrandPluginServiceProvider"
-                        ]
-                    },
-                    "fyldocs": {
-                        "plugin-id": "rebrand",
-                        "frontend-path": "frontend"
-                    }
-                }
-            }
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/fyldocs/plugin-example/zipball/main"
         },
-        "fyldocs/plugin-ai-analysis": {
-            "dev-main": {
-                "name": "fyldocs/plugin-ai-analysis",
-                "version": "dev-main",
-                "type": "fyldocs-plugin",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:fyldocs/plugin-ai-analysis.git",
-                    "reference": "main"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/fyldocs/plugin-ai-analysis/zipball/main"
-                },
-                "require": {
-                    "php": "^8.2",
-                    "illuminate/support": "^11.0"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Fyldocs\\AiAnalysis\\": "src/"
-                    }
-                },
-                "extra": {
-                    "laravel": {
-                        "providers": [
-                            "Fyldocs\\AiAnalysis\\AiAnalysisPluginServiceProvider"
-                        ]
-                    },
-                    "fyldocs": {
-                        "plugin-id": "ai-analysis",
-                        "frontend-path": "frontend"
-                    }
-                }
-            }
+        "require": {
+          "php": "^8.2",
+          "illuminate/support": "^11.0"
         },
-        "fyldocs/plugin-entities": {
-            "dev-main": {
-                "name": "fyldocs/plugin-entities",
-                "version": "dev-main",
-                "type": "fyldocs-plugin",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:fyldocs/plugin-entities.git",
-                    "reference": "main"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/fyldocs/plugin-entities/zipball/main"
-                },
-                "require": {
-                    "php": "^8.2",
-                    "illuminate/support": "^11.0"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Fyldocs\\Entities\\": "src/"
-                    }
-                },
-                "extra": {
-                    "laravel": {
-                        "providers": [
-                            "Fyldocs\\Entities\\EntitiesPluginServiceProvider"
-                        ]
-                    },
-                    "fyldocs": {
-                        "plugin-id": "entities",
-                        "frontend-path": "frontend"
-                    }
-                }
-            }
+        "autoload": {
+          "psr-4": {
+            "Fyldocs\\Example\\": "src/"
+          }
         },
-        "fyldocs/plugin-scanner": {
-            "dev-main": {
-                "name": "fyldocs/plugin-scanner",
-                "version": "dev-main",
-                "type": "fyldocs-plugin",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:fyldocs/plugin-scanner.git",
-                    "reference": "main"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "https://api.github.com/repos/fyldocs/plugin-scanner/zipball/main"
-                },
-                "require": {
-                    "php": "^8.2",
-                    "illuminate/support": "^11.0",
-                    "fyldocs/plugin-ai-analysis": "*"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Fyldocs\\Scanner\\": "src/"
-                    }
-                },
-                "extra": {
-                    "laravel": {
-                        "providers": [
-                            "Fyldocs\\Scanner\\ScannerPluginServiceProvider"
-                        ]
-                    },
-                    "fyldocs": {
-                        "plugin-id": "scanner",
-                        "frontend-path": "frontend"
-                    }
-                }
-            }
+        "extra": {
+          "laravel": {
+            "providers": [
+              "Fyldocs\\Example\\ExamplePluginServiceProvider"
+            ]
+          },
+          "fyldocs": {
+            "plugin-id": "example",
+            "frontend-path": "frontend"
+          }
         }
+      }
+    },
+    "fyldocs/plugin-rebrand": {
+      "dev-main": {
+        "name": "fyldocs/plugin-rebrand",
+        "version": "dev-main",
+        "type": "fyldocs-plugin",
+        "source": {
+          "type": "git",
+          "url": "git@github.com:fyldocs/plugin-rebrand.git",
+          "reference": "main"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/fyldocs/plugin-rebrand/zipball/main"
+        },
+        "require": {
+          "php": "^8.2",
+          "illuminate/support": "^11.0"
+        },
+        "autoload": {
+          "psr-4": {
+            "Fyldocs\\Rebrand\\": "src/"
+          }
+        },
+        "extra": {
+          "laravel": {
+            "providers": [
+              "Fyldocs\\Rebrand\\RebrandPluginServiceProvider"
+            ]
+          },
+          "fyldocs": {
+            "plugin-id": "rebrand",
+            "frontend-path": "frontend"
+          }
+        }
+      }
+    },
+    "fyldocs/plugin-ai-analysis": {
+      "dev-main": {
+        "name": "fyldocs/plugin-ai-analysis",
+        "version": "dev-main",
+        "type": "fyldocs-plugin",
+        "source": {
+          "type": "git",
+          "url": "git@github.com:fyldocs/plugin-ai-analysis.git",
+          "reference": "main"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/fyldocs/plugin-ai-analysis/zipball/main"
+        },
+        "require": {
+          "php": "^8.2",
+          "illuminate/support": "^11.0"
+        },
+        "autoload": {
+          "psr-4": {
+            "Fyldocs\\AiAnalysis\\": "src/"
+          }
+        },
+        "extra": {
+          "laravel": {
+            "providers": [
+              "Fyldocs\\AiAnalysis\\AiAnalysisPluginServiceProvider"
+            ]
+          },
+          "fyldocs": {
+            "plugin-id": "ai-analysis",
+            "frontend-path": "frontend",
+            "visibility": "private"
+          }
+        }
+      }
+    },
+    "fyldocs/plugin-entities": {
+      "dev-main": {
+        "name": "fyldocs/plugin-entities",
+        "version": "dev-main",
+        "type": "fyldocs-plugin",
+        "source": {
+          "type": "git",
+          "url": "git@github.com:fyldocs/plugin-entities.git",
+          "reference": "main"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/fyldocs/plugin-entities/zipball/main"
+        },
+        "require": {
+          "php": "^8.2",
+          "illuminate/support": "^11.0"
+        },
+        "autoload": {
+          "psr-4": {
+            "Fyldocs\\Entities\\": "src/"
+          }
+        },
+        "extra": {
+          "laravel": {
+            "providers": [
+              "Fyldocs\\Entities\\EntitiesPluginServiceProvider"
+            ]
+          },
+          "fyldocs": {
+            "plugin-id": "entities",
+            "frontend-path": "frontend",
+            "visibility": "private"
+          }
+        }
+      }
+    },
+    "fyldocs/plugin-scanner": {
+      "dev-main": {
+        "name": "fyldocs/plugin-scanner",
+        "version": "dev-main",
+        "type": "fyldocs-plugin",
+        "source": {
+          "type": "git",
+          "url": "git@github.com:fyldocs/plugin-scanner.git",
+          "reference": "main"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/fyldocs/plugin-scanner/zipball/main"
+        },
+        "require": {
+          "php": "^8.2",
+          "illuminate/support": "^11.0",
+          "fyldocs/plugin-ai-analysis": "*"
+        },
+        "autoload": {
+          "psr-4": {
+            "Fyldocs\\Scanner\\": "src/"
+          }
+        },
+        "extra": {
+          "laravel": {
+            "providers": [
+              "Fyldocs\\Scanner\\ScannerPluginServiceProvider"
+            ]
+          },
+          "fyldocs": {
+            "plugin-id": "scanner",
+            "frontend-path": "frontend",
+            "visibility": "private"
+          }
+        }
+      }
     }
+  }
 }
