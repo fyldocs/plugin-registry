@@ -10,6 +10,10 @@
                     "url": "git@github.com:fyldocs/plugin-example.git",
                     "reference": "main"
                 },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/fyldocs/plugin-example/zipball/main"
+                },
                 "require": {
                     "php": "^8.2",
                     "illuminate/support": "^11.0"
@@ -41,6 +45,10 @@
                     "type": "git",
                     "url": "git@github.com:fyldocs/plugin-rebrand.git",
                     "reference": "main"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/fyldocs/plugin-rebrand/zipball/main"
                 },
                 "require": {
                     "php": "^8.2",
